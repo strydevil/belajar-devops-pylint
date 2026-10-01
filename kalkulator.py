@@ -1,23 +1,25 @@
-"""Modul sederhana untuk demonstrasi Pylint quality gate."""
+"""Modul untuk menghitung luas persegi panjang."""
 
 
-def hitung_luas_persegi_panjang(panjang, lebar):
+def hitung_luas_persegi_panjang(panjang: float, lebar: float) -> float:
     """Menghitung luas persegi panjang.
 
     Args:
-        panjang: Panjang sisi persegi panjang.
-        lebar: Lebar sisi persegi panjang.
+        panjang: Panjang persegi panjang.
+        lebar: Lebar persegi panjang.
 
     Returns:
-        Hasil perkalian panjang dan lebar.
+        Luas persegi panjang.
     """
     return panjang * lebar
 
 
-def main():
-    """Fungsi utama program."""
-    hasil = hitung_luas_persegi_panjang(5, 3)
-    print(f"Luas persegi panjang: {hasil}")
+def main() -> None:
+    """Menjalankan program utama."""
+    panjang = 5.0
+    lebar = 3.0
+    luas = hitung_luas_persegi_panjang(panjang, lebar)
+    print(f"Luas persegi panjang: {luas}")
 
 
 if __name__ == "__main__":
